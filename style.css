@@ -1,9 +1,17 @@
 body {
     margin: 0;
-    padding: 10px;
+    padding: 0 10px;
     box-sizing: border-box;
-    min-width: 420px;
+    background-image: linear-gradient(rgba(240, 240, 240, 0.9), rgba(240, 240, 240, 0.9)), url('./luffy_3.png');
+    background-repeat: repeat;
+    background-size: 4rem;
+    min-width: 450px;
+    min-height: 220px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main-content {
+    padding: 10px 0;
 }
 
 
@@ -48,6 +56,7 @@ button {
     background-color: #60208a;
     border-color: #60208a;
     cursor: pointer;
+    box-shadow: 0 0 2px 2px #cccccc;
 }
 
 #delete-btn {
@@ -60,6 +69,7 @@ button {
     background-color: #ffffff;
     color: #4e0083;
     cursor: pointer;
+    box-shadow: 0 0 2px 2px #cccccc;
 }
 
 
@@ -67,6 +77,7 @@ button {
 
 ul {
     padding-left: 0;
+    width: 80%;
 }
 
 li {
@@ -79,8 +90,8 @@ li {
 
 li i {
     /* border: 2px solid red; */
-    height: 1.4rem;
-    min-width: 1.4rem;
+    height: 1.2rem;
+    min-width: 1.2rem;
     padding: 0.2rem;
     border-radius: 50%;
     background-color: #60208a;
@@ -93,6 +104,7 @@ li i {
 li i:hover {
     color: #60208a;
     background-color: #ffffff;
+    box-shadow: 0 0 2px 2px #cccccc;
 }
 
 .fa-lg {
@@ -101,8 +113,27 @@ li i:hover {
 
 li a {
     list-style: none;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 1rem;
 }
 
 li a:visited {
     color: #7520ad;
+}
+
+
+/* ################################## img container ############################# */
+
+.img-container {
+    width: 6rem;
+    position: absolute;
+    right: 0;
+    top: 6rem;
+}
+
+.img-container img {
+    width: 100%;
+    z-index: 0;
 }
